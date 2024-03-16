@@ -137,6 +137,8 @@ For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:
 * Now You Need Some Test MATIC On Your Wallet If You Dont You Can It For Free From [Faucet](https://www.alchemy.com/faucets/polygon-mumbai) here
 
 * You Need To Paste Your `PRIVATE KEY` In .env.example File **PRIVATE_KEY='Your Key Here'**
+  
+* And Change The file Name FROM **env.example ==> .env**
 
 * Now Lets Run The Program 
 ### Executing program
