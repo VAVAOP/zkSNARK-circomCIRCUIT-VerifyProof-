@@ -32,9 +32,9 @@ For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:
 * Next You Need To Install Necessary Dependencies:
 
         
- Hardhat:[install](https://hardhat.org/)
+   Hardhat:[install](https://hardhat.org/)
  
- nodeJs:[install](https://nodejs.org/en/download/current)                                                                                                                 
+   nodeJs:[install](https://nodejs.org/en/download/current)                                                                                                                 
 
  
 * Now You Can Design Your On circuit Using Different Types OF Gates Template Provided [HERE!](https://github.com/iden3/circomlib)
