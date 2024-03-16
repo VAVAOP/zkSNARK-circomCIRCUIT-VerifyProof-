@@ -20,7 +20,7 @@ First You Need To Know A Little About Circuit Gates These Are The Some Details A
    1  or  1 ==> 1                                                                                                                                                         
    0  or  0 ==> 0                                                                                                                                                         
    0  or  1 ==> 1                                                                                                                                                                          
-These Three Gates Will Be We Using For This Project                                                                                                                        
+These Three Gates Will Be We Using For This Project                                                                                                                        ![Circuit Diagram](https://authoring.metacrafters.io/assets/cms/Assessment_b05f6ed658.png?updated_at=2023-02-24T00:00:37.278Z)
 
 ## Getting Started
 For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:                                                                                                 
