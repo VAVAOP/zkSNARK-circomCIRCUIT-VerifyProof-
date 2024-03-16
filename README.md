@@ -29,10 +29,11 @@ For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:
 * As For IDE You Can Use Offline IDE Like[Vscode](https://code.visualstudio.com/download) Or You Can Use Online IDE Like [REmix](https://remix.ethereum.org/)Or[Gitpod](https://gitpod.io/)
 
             
-* Next You Need To Install Necessary Dependencies
+* Next You Need To Install Necessary Dependencies:
 
         
  Hardhat:[install](https://hardhat.org/)
+ 
  nodeJs:[install](https://nodejs.org/en/download/current)                                                                                                                 
 
  
