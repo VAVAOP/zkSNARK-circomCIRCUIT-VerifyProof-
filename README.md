@@ -3,23 +3,23 @@ This Project Walks You Through How To Code Different Circuit In circom Program A
 
 ## Description
 This Project Includes All The Resources That You Needed To Get Started With circom Program for Coding on zkSNARK Circuits                                                 
-First You Need To Know A Little About Circuit Gates These Are The Some Details About Basic Gates Which Includes OR,AND,NOT That You Need To Get Started :                 
-`1.AND Gate(andGate):An And Gate Takes In Two Inputs(A,B) And Returns Output(X) Based On The Below Logic:
-   A and  B ==> X
-   1 and  0 ==> 0
-   1 and  1 ==> 1
-   0 and  0 ==> 0
-   0 and  1 ==> 0  ` 
-`2.NOT Gate(notGate):An And Gate Takes In One Inputs(A) And Returns Output(X) Based On The Below Logic:                                                                    
+First You Need To Know A Little About Circuit Gates These Are The Some Details About Basic Gates Which Includes OR,AND,NOT That You Need To Get Started :                
+ 1.AND Gate(andGate):An And Gate Takes In Two Inputs(A,B) And Returns Output(X) Based On The Below Logic:                                                                
+   A and  B ==> X                                                                                                                                                        
+   1 and  0 ==> 0                                                                                                                                                        
+   1 and  1 ==> 1                                                                                                                                                        
+   0 and  0 ==> 0                                                                                                                                                        
+   0 and  1 ==> 0                                                                                                                                                        
+2.NOT Gate(notGate):An And Gate Takes In One Inputs(A) And Returns Output(X) Based On The Below Logic:                                                                    
    A ==> X                                                                                                                                                                
    1 ==> 0                                                                                                                                                                
-   0 ==> 1 `                                                                                                                                                               
-`3.OR Gate(orGate):An And Gate Takes In Two Inputs(A,B) And Returns Output(x) Based On The Below Logic:                                                                    
+   0 ==> 1                                                                                                                                                                
+3.OR Gate(orGate):An And Gate Takes In Two Inputs(A,B) And Returns Output(x) Based On The Below Logic:                                                                    
    A  or  B ==> X                                                                                                                                                         
    1  or  0 ==> 1                                                                                                                                                         
    1  or  1 ==> 1                                                                                                                                                         
    0  or  0 ==> 0                                                                                                                                                         
-   0  or  1 ==> 1  `                                                                                                                                                         
+   0  or  1 ==> 1                                                                                                                                                                          
 These Three Gates Will Be We Using For This Project                                                                                                                        
 
 ## Getting Started
