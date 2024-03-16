@@ -20,10 +20,85 @@ First You Need To Know A Little About Circuit Gates These Are The Some Details A
    1  or  1 ==> 1                                                                                                                                                         
    0  or  0 ==> 0                                                                                                                                                         
    0  or  1 ==> 1                                                                                                                                                                          
-These Three Gates Will Be We Using For This Project:                                                                                                                       ![Circuit Diagram](https://authoring.metacrafters.io/assets/cms/Assessment_b05f6ed658.png?updated_at=2023-02-24T00:00:37.278Z)                                             
+These Three Gates Will Be We Using For This Project:                                                                                                                       ![Circuit Diagram](https://authoring.metacrafters.io/assets/cms/Assessment_b05f6ed658.png?updated_at=2023-02-24T00:00:37.278Z) 
+
 **CircuitTemplates**
 
 For Creating Each Gates Of This Circuit We Are Using PreMade Template By [circomlib](https://github.com/iden3/circomlib)
+
+**This Will Be The Code For Particular Circuit**
+```
+pragma circom 2.0.0;
+
+/*This circuit Takes Two Inputs(a,b) And Give Specefic Output(q)*/  
+
+template Multiplier2 () {  
+
+   //Declare Your Input 
+      signal input a;
+      signal input b;
+
+
+  //Declare Your Signal
+      signal x;
+      signal y;
+
+
+  //Declare Your Output
+      signal output q;
+
+
+  //Declare Your Gate
+      component andGate = AND();
+      component notGate = NOT();
+      component orGate = OR();
+
+
+  //Logic Of Your Circuit
+
+  //Inputs
+      andGate.a <== a;
+      andGate.b <== b;
+      notGate.in <== b;
+  // Declare Signals
+
+      x <== andGate.out;
+      y <== notGate.out;
+  //Declare OrGate Inputs
+
+      orGate.a <== x;
+      orGate.b <== y;
+
+  //Output
+
+      q <== orGate.out;
+
+   
+}
+template AND() {
+    signal input a;
+    signal input b;
+    signal output out;
+
+    out <== a*b;
+}
+template OR() {
+    signal input a;
+    signal input b;
+    signal output out;
+
+    out <== a + b - a*b;
+}
+
+template NOT() {
+    signal input in;
+    signal output out;
+
+    out <== 1 + in - 2*in;
+}
+
+component main = Multiplier2();
+```
 
 ## Getting Started
 For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:                                                                                                 
@@ -47,17 +122,77 @@ For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:
 ### Installing
 
 * Now You Need To Install The Project Template Circuit Files By Cloning This Reprository
+  
 * Or If You Need To Start With Fresh You Can Use [TEMPLATE](https://github.com/gmchad/zardkat) here
+
 * After That You Need To Add env File For Making Your Private Keys Secure You Can Install By Going  [here](https://www.npmjs.com/package/dotenv)
+  
 * Next You Need To Setup Your Testnet Details In circuits.config.json By Going To [HardhatNetwork](https://hardhat.org/tutorial/deploying-to-a-live-network)
+
+* You Need To Paste Your `PRIVATE KEY` In .env.example File **PRIVATE_KEY='Your Key Here'**
+
+* Now Lets Run The Program 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* First install All npm Dependencies By Running:
+  
 ```
-code blocks for commands
+npm i
 ```
+* Next Lets Compile Our Cicuit By Typing:
+  
+```
+npx hardhat circom
+```
+This will generate the **out** file with circuit intermediaries and geneate the **MultiplierVerifier.sol** contract
 
+* Next We Need To Give The Input For (a,b) For the And Gate For That Just Go To input.json :
+
+```
+{
+  "a": "0",
+  "b": "1"
+}
+```
+This will Be The Input Data While We Generate Our Proof
+
+* Finally We Will Deploy Our Verifier To PolygonMumbai Testnet And Verify Our Proof By:
+
+```
+npx hardhat run scripts/deploy.ts --network mumbai
+```
+This script does 4 things  
+1. Deploys the MultiplierVerifier.sol contract Into PolygonMumbai Testnet
+2. Generates a proof from circuit intermediaries with `generateProof()` With Input(0,1)
+3. Generates calldata with `generateCallData()`
+4. Calls `verifyProof()` on the verifier contract with calldata
+
+With two commands you can compile a ZKP, generate a proof, deploy a verifier, and verify the proof 🎉
+
+### Directory Structure
+**circuits**
+```
+├── multiplier
+│   ├── circuit.circom
+│   ├── input.json
+│   └── out
+│       ├── circuit.wasm
+│       ├── multiplier.r1cs
+│       ├── multiplier.vkey
+│       └── multiplier.zkey
+├── new-circuit
+└── powersOfTau28_hez_final_12.ptau
+```
+Each new circuit lives in it's own directory. At the top level of each circuit directory lives the circom circuit and input to the circuit.
+The **out** directory will be autogenerated and store the compiled outputs, keys, and proofs. The Powers of Tau file comes from the Polygon Hermez ceremony, which saves time by not needing a new ceremony. 
+
+
+**contracts**
+```
+contracts
+└── MultiplierVerifier.sol
+```
+Verifier contracts are autogenerated and prefixed by the circuit name, in this example **Multiplier**
 ## Help
 
 Any advise for common problems or issues.
