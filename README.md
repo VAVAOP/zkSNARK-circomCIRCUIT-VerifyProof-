@@ -23,13 +23,23 @@ First You Need To Know A Little About Circuit Gates These Are The Some Details A
 These Three Gates Will Be We Using For This Project                                                                                                                        
 
 ## Getting Started
-For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:                                                                                                  
-*As For IDE You Can Use Offline IDE Like[Vscode](https://code.visualstudio.com/download) Or You Can Use Online IDE Like [REmix](https://remix.ethereum.org/)Or[Gitpod](https://gitpod.io/)                                                                                                                                                                  
-*Next You Need To Install Necessary Dependencies                                                                                                                                 
+For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:                                                                                                 
+
+
+* As For IDE You Can Use Offline IDE Like[Vscode](https://code.visualstudio.com/download) Or You Can Use Online IDE Like [REmix](https://remix.ethereum.org/)Or[Gitpod](https://gitpod.io/)
+
+            
+* Next You Need To Install Necessary Dependencies
+
+        
  Hardhat:[install](https://hardhat.org/)
- nodeJs:[install](https://nodejs.org/en/download/current)                                                                                                                           
-*Now You Can Design Your On circuit Using Different Types OF Gates Template Provided [HERE!](https://github.com/iden3/circomlib)                                                
-*Now You Are Set To GO!!!!!                                                                                                                                                  
+ nodeJs:[install](https://nodejs.org/en/download/current)                                                                                                                 
+
+ 
+* Now You Can Design Your On circuit Using Different Types OF Gates Template Provided [HERE!](https://github.com/iden3/circomlib)
+
+         
+* Now You Are Set To GO!!!!!                                                                                                                                                  
 ### Installing
 
 * Now You Need To Install The Project Template Circuit Files By Cloning This Reprository
