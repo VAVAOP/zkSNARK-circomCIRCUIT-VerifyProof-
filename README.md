@@ -5,11 +5,11 @@ This Project Walks You Through How To Code Different Circuit In circom Program A
 This Project Includes All The Resources That You Needed To Get Started With circom Program for Coding on zkSNARK Circuits
 First You Need To Know A Little About Circuit Gates These Are The Some Details About Basic Gates Which Includes OR,AND,NOT That You Need To Get Started :
 1.AND Gate(andGate):An And Gate Takes In Two Inputs(A,B) And Returns Output(X) Based On The Below Logic:
-   A and  B ==> X
-   1      0 ==> O
-   1      1 ==> 1
-   0      0 ==> O
-   0      1 ==> O
+   A and  B ==> X                                                                                                                                                         
+   1      0 ==> O                                                                                                                                                         
+   1      1 ==> 1                                                                                                                                                         
+   0      0 ==> O                                                                                                                                                         
+   0      1 ==> O                                                                                                                                                         
 2.NOT Gate(notGate):An And Gate Takes In One Inputs(A) And Returns Output(X) Based On The Below Logic:
    A ==> X
    1 ==> O
