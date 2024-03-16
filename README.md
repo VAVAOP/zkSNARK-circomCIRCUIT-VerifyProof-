@@ -31,7 +31,7 @@ These Three Gates Will Be We Using For This Project:                            
 
 For Creating Each Gates Of This Circuit We Are Using PreMade Template By [circomlib](https://github.com/iden3/circomlib)
 
-**This Will Be The Code For Particular Circuit**
+**This Will Be The Code For This Particular Circuit**
 ```
 pragma circom 2.0.0;
 
