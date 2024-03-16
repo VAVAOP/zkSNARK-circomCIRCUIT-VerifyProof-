@@ -22,7 +22,8 @@ First You Need To Know A Little About Circuit Gates These Are The Some Details A
    0  or  1 ==> 1                                                                                                                                                                          
 These Three Gates Will Be We Using For This Project:                                                                                                                       ![Circuit Diagram](https://authoring.metacrafters.io/assets/cms/Assessment_b05f6ed658.png?updated_at=2023-02-24T00:00:37.278Z)                                             
 **CircuitTemplates**
-`For Creating Each Gates Of This Circuit We Are Using PreMade Template By [circomlib](https://github.com/iden3/circomlib)`
+
+For Creating Each Gates Of This Circuit We Are Using PreMade Template By [circomlib](https://github.com/iden3/circomlib)
 
 ## Getting Started
 For Getting Fired Up You Need To Setup Your Compiler With Necesary Files:                                                                                                 
